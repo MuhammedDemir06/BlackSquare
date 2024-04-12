@@ -70,18 +70,24 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
     //Data
+#if UNITY_EDITOR
     [UnityEditor.MenuItem("Tools/Delete All Data")]
+#endif
     public static void DeletData()
     {
         PlayerPrefs.DeleteAll();
     }
+#if UNITY_EDITOR
     [UnityEditor.MenuItem("Tools/LinkedIn")]
+#endif
     public static void Instagram()
     {
         print("Follow");
         Process.Start("https://www.linkedin.com/in/muhammed-demir-b557b028b/");
     }
+#if UNITY_EDITOR
     [UnityEditor.MenuItem("Tools/Youtube")]
+#endif
     public static void Youtube()
     {
         print("Follow");

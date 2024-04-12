@@ -29,7 +29,7 @@ public class StepSpawner : MonoBehaviour
     public void StepSpawn()
     {
         var newScale = step.transform.localScale;
-        newScale.x = Random.Range(2, maxAngle);
+        newScale.x = Random.Range(3, maxAngle);
         step.transform.localScale = newScale;
 
         step.transform.position = new Vector2(Random.Range(-stepBounds, stepBounds), step.transform.position.y + stepSpawnHigh);

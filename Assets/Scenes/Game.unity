@@ -1359,7 +1359,7 @@ MonoBehaviour:
   stepSpawnHigh: 3.5
   stepBounds: 5
   stepNum: 5
-  maxAngle: 6
+  maxAngle: 5
 --- !u!4 &1062471597
 Transform:
   m_ObjectHideFlags: 0
@@ -2033,7 +2033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f367ad522fab428428ceb51b0222f5ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EditorMode: 1
+  EditorMode: 0
   losingLine: {fileID: 1341699411}
   cam: {fileID: 519420031}
   MaxScore: 0
