@@ -2033,6 +2033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f367ad522fab428428ceb51b0222f5ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EditorMode: 1
   losingLine: {fileID: 1341699411}
   cam: {fileID: 519420031}
   MaxScore: 0
@@ -2704,6 +2705,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6664424357764495723, guid: e172fbab316981c43b500c9d2e4f821c, type: 3}
+      propertyPath: ManagerGame
+      value: 
+      objectReference: {fileID: 1377948908}
+    - target: {fileID: 6664424357764495723, guid: e172fbab316981c43b500c9d2e4f821c, type: 3}
+      propertyPath: managerGame
+      value: 
+      objectReference: {fileID: 1377948908}
     - target: {fileID: 7456347036404840022, guid: e172fbab316981c43b500c9d2e4f821c, type: 3}
       propertyPath: m_Name
       value: BlackSquare

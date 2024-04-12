@@ -10,6 +10,7 @@ public class SquareController : MonoBehaviour
     public static SquareEvent StepSpawnControl;
     public static SquareEvent ScoreUpdateControl;
     public static SquareEvent PlayerLoseControl;
+    public GameManager ManagerGame;
 
     [Header("Control")]
     [Range(1, 10)] [SerializeField] private float speed;
@@ -31,7 +32,7 @@ public class SquareController : MonoBehaviour
     }
     private void GetInput()
     {
-        if(GameManager.EditorMode)
+        if(ManagerGame.EditorMode)
           inputX = Input.GetAxis("Horizontal");
     }
     private void Move()
@@ -48,6 +49,9 @@ public class SquareController : MonoBehaviour
 
         //Ground
         IsGrounded = Physics2D.BoxCast(coll2D.bounds.center, coll2D.bounds.size, 0f, Vector2.down, 0.1f, groundLayer);
+
+            if (Input.GetKeyDown(KeyCode.Space))
+                Jump();
     }
     private void Jump()
     {
