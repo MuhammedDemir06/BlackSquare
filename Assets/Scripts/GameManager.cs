@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 #if UNITY_EDITOR
     [UnityEditor.MenuItem("Tools/LinkedIn")]
 #endif
-    public static void Instagram()
+    public static void LinkedIn()
     {
         print("Follow");
         Process.Start("https://www.linkedin.com/in/muhammed-demir-b557b028b/");
